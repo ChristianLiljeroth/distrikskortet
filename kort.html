@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Distriktskortet</title>
+		
+		<link rel="stylesheet" href="css/styles.css"/>
+		<!--A Google API key is needed for map initiation!-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=[INSERT KEY]"></script>
+		<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/initialization.js"></script>
+		<script type="text/javascript" src="js/js-map-label/js-map-label.js"></script>
+		<script type="text/javascript" src="js/hull/hull.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript" src="districts/hundige.json"></script>
+		<script type="text/javascript" src="districts/tranegilde.json"></script>
+		<script type="text/javascript" src="districts/brondbyvest.json"></script>
+	</head>
+	
+	<body>		
+		<div id="map"></div>
+		<a id="link" href="/" style="display:none;"><img id="home" src="images/home.svg" alt="Home"></a>
+		<input id="search" type="text" style="display:none;">
+	</body>
+</html>

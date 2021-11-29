@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Distriktskortet</title>
+		
+		<link rel="stylesheet" href="css/styles.css"/>
+		<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/initialization.js"></script>
+		<script type="text/javascript" src="js/districts.js"></script>
+		<script type="text/javascript" src="js/hull/hull.js"></script>
+		<script type="text/javascript" src="js/tablesort/jquery.tablesort.min.js"></script>
+	</head>
+
+	<body>
+		<div id="content">
+			<div class="barBox">Distrikter</div>
+		<div style="text-align:center">
+		<a href="/"><img id="home" src="images/home.svg" alt="Home" style="top:7px;"></a>
+			<input id="search" type="text">
+			<div class="buttonAddresses" onclick="searchDistricts()">Søg</div>
+		</div>
+		<div style="text-align:center">
+			<input class="checkbox" type="checkbox" id="number" checked> Nummer
+			<input class="checkbox" type="checkbox" id="name" checked> Navn
+			<input class="checkbox" type="checkbox" id="addresses" checked> Adresser
+		</div>
+		</br>
+		<table id="addressTable">
+			<tr>
+				<th>Distrikt</th>
+				<th>Navn</th>
+				<th>Antal Besøg</th> 				
+				<th>Kort</th>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

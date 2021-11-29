@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Distriktskortet</title>
+		
+		<link rel="stylesheet" href="css/styles.css"/>
+		<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/initialization.js"></script>
+		<script type="text/javascript" src="districts/hundige.json"></script>
+		<script type="text/javascript" src="districts/tranegilde.json"></script>
+		<script type="text/javascript" src="districts/brondbyvest.json"></script>
+	</head>
+	
+	<body>
+		<div id="intro" class="intro">
+			<p> Vælg et område:<p>
+			<div class="buttonStartDistrict" onclick="chooseDistrict(hundige)">Hundige</div><br>
+			<div class="buttonStartDistrict" onclick="chooseDistrict(brondbyVest)">Brøndby Vest</div><br>
+			<div class="buttonStartDistrict" onclick="chooseDistrict(tranegilde)">Tranegilde</div><br>
+			<a class="buttonLink" href="kort.html"><div class="buttonStartDistrict">Alle</div></a><br>
+		</div>
+		<div id="ActionChooser" class="intro" style="display:none">
+			<div style="font-size:20px; text-align:right;">
+				<p id="distText" style="display:inline-block;"> no_district </p>
+				<div class="buttonAddresses" onclick="unsetDistrict()">Skift</div>
+			</div>
+			<p> Hvad vil du arbejde med?<p>
+			<a class="buttonLink" href="kort.html"><div id="item1" class="buttonStartAction">Distriktskortet</div></a><br>
+			<a class="buttonLink" href="adresser.html"><div id="item2" class="buttonStartAction" style="display:none;">Adresser</div></a><br>
+			<a class="buttonLink" href="distrikter.html"><div id="item3" class="buttonStartAction" style="display:none;">Distrikter</div></a><br>
+		</div>	
+	</body>
+</html>
